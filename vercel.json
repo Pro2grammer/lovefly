@@ -1,17 +1,11 @@
 {
-  "functions": {
-    "api/**/*.php": {
-      "runtime": "vercel-php@0.6.0"
-    }
-  },
+ "functions": {
+    "api/**/*.php": { runtime: "vercel-php@0.6.0" }
+}
   "routes": [
     {
-      "src": "/booking",
-      "dest": "/api/booking.php"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/api/booking.php"
     }
   ]
 }
